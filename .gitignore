@@ -1,0 +1,9 @@
+.hg
+.svn
+.CVS
+.idea
+node_modules/
+jscoverage_lib/
+bower_components/
+dist/
+.DS_Store

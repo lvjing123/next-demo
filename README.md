@@ -34,3 +34,12 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+run npm i @vercel/postgres to connect postgres
+npm i @vercel/postgres 
+
+## 学习资料
+https://github.com/vercel/next-learn/blob/main/dashboard/final-example
+
+## 数据库相关
+https://vercel.com/lvjings-projects/next-demo-dashboard/stores/postgres/store_5OY17Dc1837WuYcs/data

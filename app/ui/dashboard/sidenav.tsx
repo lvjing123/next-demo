@@ -1,10 +1,13 @@
+'use client' // 主要是 usePathname 只能在 client 端使用，需要加上这一行
+
 import {
     UserGroupIcon,
     HomeIcon,
+    DocumentDuplicateIcon,
   } from '@heroicons/react/24/outline'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
-import clsx from 'clsx'
+import { clsx } from 'clsx'
 
 const links = [
     {
@@ -13,7 +16,7 @@ const links = [
         href: '/dashboard'
     },
     {
-        icon: HomeIcon,
+        icon: DocumentDuplicateIcon,
         name: 'admin',
         href: '/dashboard/admin'
     },

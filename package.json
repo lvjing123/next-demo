@@ -7,17 +7,23 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "seed": "node -r dotenv/config ./scripts/seed.js"
+    "seed": "node -r dotenv/config ./scripts/seed.js",
+    "local": "node -r dotenv/config ./scripts/localDb.js"
   },
   "dependencies": {
     "@heroicons/react": "^2.1.1",
+    "@types/bcryptjs": "^2.4.6",
     "@vercel/postgres": "^0.7.2",
     "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
     "clsx": "^2.1.0",
     "dotenv": "^16.3.1",
-    "next": "14.1.0",
+    "next": "^14.1.0",
+    "next-auth": "^5.0.0-beta.4",
+    "pg": "^8.11.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "zod": "^3.23.8"
   },
   "devDependencies": {
     "@types/node": "^20",

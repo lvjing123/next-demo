@@ -36,10 +36,35 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 run npm i @vercel/postgres to connect postgres
-npm i @vercel/postgres 
+npm i @vercel/postgres
 
 ## 学习资料
+
 https://github.com/vercel/next-learn/blob/main/dashboard/final-example
 
+https://qufei1993.github.io/nextjs-learn-cn
+
 ## 数据库相关
+
 https://vercel.com/lvjings-projects/next-demo-dashboard/stores/postgres/store_5OY17Dc1837WuYcs/data
+
+## 文件目录
+
+- app
+  - dashboard
+    - main router page
+  - ui
+    - components
+
+## generate AUTH_SECRET
+
+- by the command [openssl rand -hex 32] in terminal
+
+## 项目链接数据库
+
+https://nextjs.org/learn/dashboard-app/setting-up-your-database
+
+- git clone project
+- setup database
+- link project and database
+- yarn run seed to init database

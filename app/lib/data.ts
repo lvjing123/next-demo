@@ -1,4 +1,5 @@
-import { sql } from '@vercel/postgres';
+// import { sql } from '@vercel/postgres'; 
+import { sql } from './sql-hack'; // 根据环境选择，是否使用线上的sql 还是连接本地数据库使用的的sql
 import {
   CustomerField,
   CustomersTableType,
@@ -161,7 +162,6 @@ export async function fetchInvoiceById(id: string) {
       FROM invoices
       WHERE invoices.id = ${id};
     `;
-
     const invoice = data.rows.map((invoice) => ({
       ...invoice,
       // Convert amount from cents to dollars
@@ -182,9 +182,9 @@ export async function fetchCustomers() {
         id,
         name
       FROM customers
-      ORDER BY name ASC
+      ORDER BY name ASC;
     `;
-
+    // console.log(data, 'data')
     const customers = data.rows;
     return customers;
   } catch (err) {
@@ -192,7 +192,6 @@ export async function fetchCustomers() {
     throw new Error('Failed to fetch all customers.');
   }
 }
-
 export async function fetchFilteredCustomers(query: string) {
   noStore();
   try {

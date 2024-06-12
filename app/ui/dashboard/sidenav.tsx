@@ -8,6 +8,7 @@ import {
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { clsx } from 'clsx'
+import styles from '@/app/ui/css/home.module.css'
 
 const links = [
     {
@@ -29,7 +30,7 @@ const links = [
 export default function SideNav() {
     const pathname = usePathname()
     return (
-        <>
+        <div className={`${styles['left-side-container']}`}>
         {links.map((link) => {
             const LinkIcon = link.icon;
             return (
@@ -37,9 +38,9 @@ export default function SideNav() {
                     key={link.name}
                     href={link.href}
                     className={clsx(
-                        'flex h-[48px] grow items-center justify-center gap-2 rounded-md bg-gray-50 p-3 text-sm font-medium hover:bg-sky-100 hover:text-blue-600 md:flex-none md:justify-start md:p-2 md:px-3',
+                        'flex h-[48px] grow items-center justify-center gap-2 rounded-md marker:p-3 text-sm font-medium md:flex-none md:justify-start md:p-2 md:px-3',
                         {
-                          'bg-sky-100 text-blue-600': pathname === link.href,
+                          ' text-blue-600': pathname === link.href,
                         },
                       )}
           
@@ -50,6 +51,6 @@ export default function SideNav() {
             )
             })
         }
-    </>
+    </div>
     )
 }

@@ -68,3 +68,9 @@ https://nextjs.org/learn/dashboard-app/setting-up-your-database
 - setup database
 - link project and database
 - yarn run seed to init database
+
+## 项目可连接本地数据库
+
+- docker install pgsql
+- pgsql start
+- init database

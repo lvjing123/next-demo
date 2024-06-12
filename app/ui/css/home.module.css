@@ -1,3 +1,7 @@
 .header-conatiner {
     background-color: lightblue;
 }
+.left-side-container {
+    height: calc(100vh);
+    background: linear-gradient(to bottom right, lightblue, pink);
+}

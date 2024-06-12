@@ -14,7 +14,7 @@ import { useFormState } from 'react-dom'
 
 export default function Form({ customers }: { customers: CustomerField[] }) {
   const initialState = { message: null, errors: {} }
-  const [state, dispatch] = useFormState(createCustomer, initialState)
+  const [state, dispatch] = useFormState(createCustomer, initialState as any)
 
   return (
     <form action={dispatch}>
